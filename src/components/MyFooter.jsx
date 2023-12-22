@@ -1,4 +1,5 @@
 import React from 'react';
+import { IoLogoInstagram, IoLogoFacebook, IoLogoTwitter, IoLogoYoutube } from "react-icons/io5";
 
 const Footer = () => {
   return (
@@ -6,11 +7,11 @@ const Footer = () => {
       <div className="row text-center mt-5">
         <div className="col-6 offset-3">
           <div className="row">
-            <div className="col col-12 text-left mb-2">
-              <i className="fa fa-facebook footer-icon"></i>
-              <i className="fa fa-instagram footer-icon"></i>
-              <i className="fa fa-twitter footer-icon"></i>
-              <i className="fa fa-youtube footer-icon"></i>
+            <div className="col col-12 text-start mb-2">
+              <IoLogoFacebook className='text-secondary me-2'/>
+              <IoLogoInstagram className='text-secondary me-2'/>
+              <IoLogoTwitter className="text-secondary me-2"/>
+              <IoLogoYoutube className="text-secondary me-2"/>
             </div>
           </div>
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 text-start">
