@@ -42,19 +42,21 @@ const FilmsAvengers = () => {
         const chunkedFilms = chunkArray(films, 6);
     
         return chunkedFilms.map((filmGroup, index) => (
-          <Carousel.Item key={index}>
-            <div className="d-flex justify-content-start">
-              {filmGroup.map((film, subIndex) => (
-                <div key={subIndex} className="text-center">
-                  <Image src={film.Poster} alt={film.Title} fluid  />
-                  <div className="mt-2">
-                    <h6 className='text-white'>{film.Title}</h6>
-                    <p className='text-white'>Anno di uscita: {film.Year}</p>
+          
+            <Carousel.Item key={index}>
+              <div className="d-flex justify-content-start">
+                {filmGroup.map((film, subIndex) => (
+                  <div key={subIndex} className="text-center">
+                    <Image src={film.Poster} alt={film.Title} fluid  />
+                    <div className="mt-2">
+                      <h6 className='text-white'>{film.Title}</h6>
+                      <p className='text-white'>Anno di uscita: {film.Year}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          </Carousel.Item>
+                ))}
+              </div>
+            </Carousel.Item>
+          
     ));
   };
 
