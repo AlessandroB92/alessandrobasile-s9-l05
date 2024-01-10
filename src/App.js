@@ -4,16 +4,21 @@ import MyNav from './components/MyNav';
 import MyHeader from './components/MyHeader';
 import MyMain from './components/MyMain';
 import MyFooter from './components/MyFooter';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import TvShow from './components/TvShow';
 
 function App() {
   return (
     <>
-      <header>
+      <BrowserRouter>
         <MyNav />
         <MyHeader />
-      </header>
-      <MyMain />
-      <MyFooter />
+        <Routes>
+          <Route path='/' element ={<MyMain/>} />
+          <Route path='/TvShow' element = {<TvShow/>}/>
+          </Routes>      
+      </BrowserRouter>
+        <MyFooter />
     </>
   );
 }

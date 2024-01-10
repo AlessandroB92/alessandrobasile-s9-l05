@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../image/logo.png';
 import { FaMagnifyingGlass, FaBell, FaUser } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
@@ -21,14 +22,14 @@ const Navbar = () => {
         <div>
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <a className="nav-link font-weight-bold" href="#">
+              <Link className="nav-link font-weight-bold" to="/">
                 Home <span className="sr-only"></span>
-              </a>
+              </Link>
             </li>
             <li className="nav-item active">
-              <a className="nav-link font-weight-bold" href="#">
+              <Link className="nav-link font-weight-bold" to="/TvShow">
                 TV Shows
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link font-weight-bold" href="#">
